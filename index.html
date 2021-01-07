@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="JavaScript.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,6 +43,8 @@
           </div>
         </div>
         </section>
+        
+        
     
     
    
@@ -51,10 +55,215 @@
     </div>
 
     <div class="main" id="portfolio">
-        <h1>Projects</h1>
+      <br>
+      <br><br><br>
+      <h1>Recent Projects</h1>
+      <br><br>
+        <div class="Scrollimg">
+          <ul>
+            
+            
+            <li>
+              <img src="ForP.jfif" alt="" id="image">
+              <div class="CoI">Project1
+              </div></li>
+            <li>
+              <img src="ForP.jfif" alt="" id="image2">
+              <div class="CoI">Project2
+                <img src="" alt="">
+              </div></li>
+            <li>
+              <img src="ForP.jfif" alt="" id="image3">
+              <div class="CoI">Project3
+                <img src="" alt="">
+              </div></li>
+            <li>
+              <img src="ForP.jfif" alt="" id ="image4">
+              <div class="CoI">Project4
+                <img src="" alt="">
+              </div></li>
+            <li>
+              <img src="ForP.jfif" alt="" id ="image5">
+              <div class="CoI">Project5
+                <img src="" alt="">
+              </div></li>
+          </ul>
+         
+
+
+
+          </div>
+          <br><br>
+          
+          <div  id="Containt1">
+            <img class="Img1" src="ForP.jfif">
+            <img class="img2" src="ForP.jfif">
+            <img class="img3" src="ForP.jfif">
+            <p>1</p>
+            <a href="#" type="button" class="Dwonf1">Download Project</a>
+          
+          </div>
+          <div  id="Containt2">
+           <img class="Img1" src="ForP.jfif">
+           <img class="img2" src="ForP.jfif">
+           <img class="img3" src="ForP.jfif">
+           <p>2</p>
+           <a href="#" type="button" class="Dwonf1">Download Project</a>
+        
+          </div>
+          <div  id="Containt3">
+            <img class="Img1" src="ForP.jfif">
+            <img class="img2" src="ForP.jfif">
+            <img class="img3" src="ForP.jfif">
+            <p>3</p>
+            <a href="#" type="button" class="Dwonf1">Download Project</a>
+      
+          </div>
+          <div  id="Containt4">
+           <img class="Img1" src="ForP.jfif">
+           <img class="img2" src="ForP.jfif">
+           <img class="img3" src="ForP.jfif">
+           <p>4</p>
+           <a href="#" type="button" class="Dwonf1">Download Project</a>
+    
+          </div>
+          <div  id="Containt5">
+           <img class="Img1" src="ForP.jfif">
+           <img class="img2" src="ForP.jfif">
+           <img class="img3" src="ForP.jfif">
+           <p>5</p>
+           <a href="#" type="button" class="Dwonf1">Download Project</a>
+    
+          </div>
+
+
+        <script>
+
+          document.getElementById("image").addEventListener("click",function(){
+           var Box1 = document.getElementById("Containt1");
+           var Box2 = document.getElementById("Containt2");
+           var Box3 = document.getElementById("Containt3");
+           var Box4 = document.getElementById("Containt4");
+           var Box5 = document.getElementById("Containt5");
+           if(Box1.style.display=="none")  {
+              Box1.style.display="flex";
+              Box2.style.display="none";
+              Box3.style.display="none";
+              Box4.style.display="none";
+              Box5.style.display="none";
+
+           }
+           else{
+               Box1.style.display="none";
+           }
+       
+       
+       
+       
+          } );
        
 
+
+       document.getElementById("image2").addEventListener("click",function(){
+           var Box1 = document.getElementById("Containt1");
+           var Box2 = document.getElementById("Containt2");
+           var Box3 = document.getElementById("Containt3");
+           var Box4 = document.getElementById("Containt4");
+           var Box5 = document.getElementById("Containt5");
+           if(Box2.style.display=="none")  {
+              Box1.style.display="none";
+              Box2.style.display="flex";
+              Box3.style.display="none";
+              Box4.style.display="none";
+              Box5.style.display="none";
+
+           }
+           else{
+               Box2.style.display="none";
+           }
+       
+       
+       
+       
+          } );
+       document.getElementById("image3").addEventListener("click",function(){
+           var Box1 = document.getElementById("Containt1");
+           var Box2 = document.getElementById("Containt2");
+           var Box3 = document.getElementById("Containt3");
+           var Box4 = document.getElementById("Containt4");
+           var Box5 = document.getElementById("Containt5");
+           if(Box3.style.display=="none")  {
+              Box1.style.display="none";
+              Box2.style.display="none";
+              Box3.style.display="flex";
+              Box4.style.display="none";
+              Box5.style.display="none";
+
+           }
+           else{
+               Box3.style.display="none";
+           }
+       
+       
+       
+       
+          } );
+       document.getElementById("image4").addEventListener("click",function(){
+           var Box1 = document.getElementById("Containt1");
+           var Box2 = document.getElementById("Containt2");
+           var Box3 = document.getElementById("Containt3");
+           var Box4 = document.getElementById("Containt4");
+           var Box5 = document.getElementById("Containt5");
+           if(Box4.style.display=="none")  {
+              Box1.style.display="none";
+              Box2.style.display="none";
+              Box3.style.display="none";
+              Box4.style.display="flex";
+              Box5.style.display="none";
+
+           }
+           else{
+               Box4.style.display="none";
+           }
+       
+       
+       
+       
+          } );
+       document.getElementById("image5").addEventListener("click",function(){
+           var Box1 = document.getElementById("Containt1");
+           var Box2 = document.getElementById("Containt2");
+           var Box3 = document.getElementById("Containt3");
+           var Box4 = document.getElementById("Containt4");
+           var Box5 = document.getElementById("Containt5");
+           if(Box5.style.display=="none")  {
+              Box1.style.display="none";
+              Box2.style.display="none";
+              Box3.style.display="none";
+              Box4.style.display="none";
+              Box5.style.display="flex";
+
+           }
+           else{
+               Box5.style.display="none";
+           }
+       
+       
+       
+       
+          } );
+
+         
+     </script>
+       
+       
     </div>
+    
+    
+
+    <br><br><br>
+
+
     <div class="main" id="Team">
         <h1>Team </h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore mollitia impedit quas illo libero odio, praesentium ducimus veritatis, sed aut repudiandae fuga? Quos, vel ullam neque unde inventore modi ipsam!</p>
@@ -97,7 +306,14 @@ function topFunction() {
 }
 
 
+
   </script>
+  <script src="ClickShowHide.js">
+
+  </script>
+  
+   
+ 
 
 </body>
 </html>
