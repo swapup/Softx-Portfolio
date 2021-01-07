@@ -258,13 +258,16 @@ p{
     }
 }
 #portfolio{
-    height: 600px;
+    height: 300px;
+    
+}
+#portfolio ul{
     margin-left: 100px;
 }
 
 #portfolio ul li{
     
-    margin-left: -100px;
+    margin-left: 100px;
     align-items: center;
 	text-align: center;
 	display: inline-block;
@@ -276,50 +279,96 @@ p{
 }
 #portfolio .scrollimg .image{
     max-width: 200px;
+    transition: .6s ease-out;
+}
+#portfolio ul li #image :hover{
+    max-width: 220px;
+}
+
+#CoI1{
+    font-size: 100%;
 }
 .carousel-cell{
     display: block;
 }
 
 #Containt1{
-    margin-left: 20px;
+    margin-left: 120px;
     max-width: 1200px;
-    height: 400px;
+
     border: 2px solid;
     display: none;
-
+    height: 400px;
 }
 #Containt2{
-    margin-left: 20px;
+    margin-left: 120px;
     max-width: 1200px;
-    height: 400px;
+
     border: 2px solid;
     display: none;
+    height: 400px;
 
+}
+.ConD1{
+    width: 65%;  
+     display: flex;
+}
+.ConD2{
+    width: 50%; border: 2px solid white;
+}
+.ConD3{
+    width: 50%;
+     border: 2px solid white;
+       display: flex;
+        flex-direction: column;
+    
+}
+.ConD4{
+    height: 50%;
+    border-bottom: 
+    2px solid white;
+}
+.ConD5{
+    height: 50%;  
+    border-top: 2px solid white;
+}
+.ConD6{
+    width: 35%;  
+    border: 2px solid white; 
+    padding: 5px;
+}
+#ProjB{
+    padding: 5px; 
+    align-content: space-around;
 }
 
 #Containt3{
-    margin-left: 20px;
+    margin-left: 120px;
     max-width: 1200px;
-    height: 400px;
+
     border: 2px solid;
     display: none;
+    height: 400px;
+
 
 }
 #Containt4{
-    margin-left: 20px;
+    margin-left: 120px;
     max-width: 1200px;
-    height: 400px;
+
     border: 2px solid;
     display: none;
+    height: 400px;
+
 
 }
 #Containt5{
-    margin-left: 20px;
+    margin-left: 120px;
     max-width: 1200px;
-    height: 400px;
+
     border: 2px solid;
     display: none;
+    height: 400px;
 
 }
 .Img1{
@@ -336,7 +385,9 @@ p{
 }
 
 #portfolio{
-    height: 1000px;
+    height: 500px;
+    background:url("https://source.unsplash.com/1600x1000/?nature,computers,space");
+    background-attachment: fixed;
 
 }
 
