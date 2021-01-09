@@ -277,12 +277,22 @@ p{
 
 
 }
+
+.image{
+    width: 500px;
+    height: 200px;
+}
 #portfolio .scrollimg .image{
-    max-width: 200px;
+    max-width: 100%;
+
     transition: .6s ease-out;
 }
 #portfolio ul li #image :hover{
     max-width: 220px;
+}
+.ProjectSec{
+    width: 65%;  
+    display: flex;
 }
 
 #CoI1{
@@ -292,57 +302,174 @@ p{
     display: block;
 }
 
-#Containt1{
+#ProContaint1{
     margin-left: 120px;
     max-width: 1200px;
 
-    border: 2px solid;
+
+    border: 2px solid black;
     display: none;
-    height: 400px;
+    height: 410px;
+    position: relative;
 }
-#Containt2{
+#ProContaint2{
     margin-left: 120px;
     max-width: 1200px;
 
-    border: 2px solid;
+
+    border: 2px solid black;
     display: none;
-    height: 400px;
+    height: 410px;
+    position: relative;
 
 }
-.ConD1{
-    width: 65%;  
-     display: flex;
-}
+
+
+
+
+
+/*       Slider Code */
 .ConD2{
-    width: 50%; border: 2px solid white;
+    left:-12px;
+    width: 60%;
+    display:inline-block;
+    position: relative;
+    
+    
+    margin: 0 auto;
+    height: 400px;
 }
+
+.slidingImg{
+    width: 97%;
+    
+    height: 100%;
+    object-fit:cover;
+}
+.track-container{
+    
+    height: 100%;
+    width: 98%;
+    position: relative;
+}
+
+track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+.slideimg{
+    position: absolute;
+    top: 0;
+    left:1%;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+}
+.ConDBtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    height: 100px;
+    cursor: pointer;
+    
+    
+
+}
+.btn--left{
+    left :-2%;
+}
+.btn--right{
+    right: -6%;
+}
+
+.cnav{
+    background: yellow;
+    display: inline-block;
+    justify-content: center;
+}
+.cnav_indi{
+    border: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: black;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .ConD3{
     width: 50%;
-     border: 2px solid white;
+     border: 2px solid black;
        display: flex;
         flex-direction: column;
     
 }
+.p{
+    position: relative;
+    background-color: black;
+    
+}
+.ParaAP{
+    height: 92.5%;
+}
 .ConD4{
     height: 50%;
     border-bottom: 
-    2px solid white;
+    2px solid black;
 }
 .ConD5{
     height: 50%;  
-    border-top: 2px solid white;
+    border-top: 2px solid black;
 }
 .ConD6{
     width: 35%;  
     border: 2px solid white; 
     padding: 5px;
+    background-color: black;
 }
 #ProjB{
     padding: 5px; 
     align-content: space-around;
 }
 
-#Containt3{
+#ProContaint3{
     margin-left: 120px;
     max-width: 1200px;
 
@@ -352,7 +479,7 @@ p{
 
 
 }
-#Containt4{
+#ProContaint4{
     margin-left: 120px;
     max-width: 1200px;
 
@@ -362,7 +489,7 @@ p{
 
 
 }
-#Containt5{
+#ProContaint5{
     margin-left: 120px;
     max-width: 1200px;
 
