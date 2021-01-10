@@ -273,14 +273,15 @@ p{
 	display: inline-block;
 	list-style: none;
     margin: 0px 20px;
-    border: 3px solid;
+    
+    
 
 
 }
 
 .image{
-    width: 500px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
 }
 #portfolio .scrollimg .image{
     max-width: 100%;
@@ -291,36 +292,56 @@ p{
     max-width: 220px;
 }
 .ProjectSec{
-    width: 65%;  
+    width: 69%;  
     display: flex;
 }
 
 #CoI1{
     font-size: 100%;
 }
-.carousel-cell{
-    display: block;
-}
+
 
 #ProContaint1{
+    background-color: darkgray;
     margin-left: 120px;
     max-width: 1200px;
-
-
-    border: 2px solid black;
     display: none;
-    height: 410px;
+    height: 500px;
     position: relative;
 }
 #ProContaint2{
+    background-color: darkgray;
     margin-left: 120px;
     max-width: 1200px;
-
-
-    border: 2px solid black;
     display: none;
-    height: 410px;
+    height: 500px;
     position: relative;
+
+}
+#ProContaint3{
+    background-color: darkgray;
+    margin-left: 120px;
+    max-width: 1200px;
+    display: none;
+    height: 500px;
+
+
+}
+#ProContaint4{
+    background-color: darkgray;
+    margin-left: 120px;
+    max-width: 1200px;
+    display: none;
+    height: 500px;
+
+
+}
+#ProContaint5{
+    background-color: darkgray;
+    margin-left: 120px;
+    max-width: 1200px;
+     display: none;
+    height: 500px;
 
 }
 
@@ -337,7 +358,7 @@ p{
     
     
     margin: 0 auto;
-    height: 400px;
+    height: 500px;
 }
 
 .slidingImg{
@@ -350,7 +371,9 @@ p{
     
     height: 100%;
     width: 98%;
-    position: relative;
+    top:0;
+    bottom: 0;
+    position:relative;
 }
 
 track{
@@ -372,8 +395,96 @@ track{
   .active, .dot:hover {
     background-color: #717171;
   }
+  .dot1 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot1:hover {
+    background-color: #717171;
+  }
+  .dot2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot2:hover {
+    background-color: #717171;
+  }
+  .dot3 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot3:hover {
+    background-color: #717171;
+  }
+  .dot4 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot4:hover {
+    background-color: #717171;
+  }
   
 .slideimg{
+    position: absolute;
+    top: 0;
+    left:1%;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+}
+.slideimg1{
+    position: absolute;
+    top: 0;
+    left:1%;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+}
+.slideimg2{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+}
+.slideimg3{
+    position: absolute;
+    top: 0;
+    left:1%;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+}
+.slideimg4{
     position: absolute;
     top: 0;
     left:1%;
@@ -414,33 +525,6 @@ track{
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.ConD3{
-    width: 50%;
-     border: 2px solid black;
-       display: flex;
-        flex-direction: column;
-    
-}
 .p{
     position: relative;
     background-color: black;
@@ -449,15 +533,7 @@ track{
 .ParaAP{
     height: 92.5%;
 }
-.ConD4{
-    height: 50%;
-    border-bottom: 
-    2px solid black;
-}
-.ConD5{
-    height: 50%;  
-    border-top: 2px solid black;
-}
+
 .ConD6{
     width: 35%;  
     border: 2px solid white; 
@@ -465,45 +541,18 @@ track{
     background-color: black;
 }
 #ProjB{
-    padding: 5px; 
+    padding: 5px;
+    border: 3px solid green;
+    color: black ;
+    text-emphasis: none; 
+    font-size: 100%;
     align-content: space-around;
 }
 
-#ProContaint3{
-    margin-left: 120px;
-    max-width: 1200px;
 
-    border: 2px solid;
-    display: none;
-    height: 400px;
-
-
-}
-#ProContaint4{
-    margin-left: 120px;
-    max-width: 1200px;
-
-    border: 2px solid;
-    display: none;
-    height: 400px;
-
-
-}
-#ProContaint5{
-    margin-left: 120px;
-    max-width: 1200px;
-
-    border: 2px solid;
-    display: none;
-    height: 400px;
-
-}
 .Img1{
     border: 2px;
 }
-
-
-
 
 
 #service{
@@ -513,7 +562,7 @@ track{
 
 #portfolio{
     height: 500px;
-    background:url("https://source.unsplash.com/1600x1000/?nature,computers,space");
+    background-color: cyan;
     background-attachment: fixed;
 
 }
