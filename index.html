@@ -1,59 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/team.css">
+    <link rel="stylesheet" href="CSS/Footerstyle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="JavaScript.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-Page</title>
 </head>
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-fw fa-arrow-up"></i></button>
     <header>
-        <a href="#" class="logo">SOFT-X</a>
+        <a href="index.html" class="logo"><span style="color: midnightblue;">SOFT</span>-<span style="color:gold">X</span></a>
         <ul>
             <li><a href="#home"><i class="fa fa-fw fa-home"></i>Home</a></li>
             <li><a href="#service"><i class="fa fa-fw fa-globe"></i>Services</a></li>
-            <li><a href="#portfolio"><i class="fa fa-fw fa-briefcase"></i>Projects</a></li>
+            <li><a href="#portfolio"><i class="fa fa-fw fa-briefcase"></i>PortFolio</a></li>
             <li><a href="#Team"><i class="fa fa-fw fa-users"></i>Team</a></li>
             <li><a href="#about"><i class="fa fa-fw fa-info"></i>About-us</a></li>
            
         </ul>
-        <button class="contact"> <i class="fa fa-fw fa-address-book"></i> Contact-us</button>
-        <img class="img">
+        <a href="Contact.html"><button class="contact"> <i class="fa fa-fw fa-address-book"></i> Contact-us</button></a>
     </header>
-    <br><br><br><br><br>
-   
-
-    <section  class="main" id="home">
-     <div class="Home container">
-        <div class="Full">
-            <h1>Welcome to ,</h1>
-            <h1>SoftX.<span></span></h1>
-            
-            <h1>We develop desktop mobile & software </h1>
-            <a href="#" type="button" class="expl">Explore</a>
-          </div>
-          <div class="homeimg">
-            <img class="logoim" src="Codinglogo.png">
-
-          </div>
-        </div>
-        </section>
-        
-        
     
-    
+    <br><br><br><br>
+    <div  class="main" id="home">
    
+    
+        <div class="Home container">
+           <div class="Full">
+               <h1>Welcome to ,</h1>
+               <h1>SoftX.<span></span></h1>
+               
+               <h1>We develop desktop mobile & software </h1>
+               <a href="#" type="button" class="expl"><i class="fa fa-fw fa-wpexplorer"> </i>Explore</a>
+             </div>
+             <div class="homeimg">
+               <img class="logoim" src="imgs/Codinglogo.png">
+   
+             </div>
+           </div>
+           
+      
+
+       
+    </div>
+    <br><Br>
     
     <div class="main" id="service">
-        <h1>Services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, necessitatibus quo? Saepe, temporibus. Quod, laudantium. Fuga fugit ullam expedita aperiam dicta nihil. Dolores adipisci saepe corporis distinctio! Enim, dolore ipsum?</p>
-    </div>
+      
+        <h1 style="text-align: center;color: white; margin-top: -1px;  padding:10px;">Services</h1>
+        <br>
+       
+        <div class="slider">
+          
+          <div class="row sliders">
+            
+            <div class="column">
+          <div class="card">
+            <img src="https://source.unsplash.com/1500x1000/?network,coding" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Software Development</b></h4>
+              <p class="subinfo">Softwares Development in java,python, and many more</p>
+              <div class="btn">
+                <button class="servicebtn">READ MORE</button>
+                </div>
+            </div>
+          </div>
+        </div>
+          
+        
+          <div class="column">
+            <div class="card">
+              <img src="https://source.unsplash.com/1500x1000/?web,coder,hacker" alt="" style="width:100%">
+              <div class="container">
+                <h4><b>Web Development</b></h4>
+                <p class="subinfo">Web Development made using wordpress, Java, Django</p>
+                <div class="btn">
+                  <button class="servicebtn">READ MORE</button>
+                  </div>
+              </div>
+            </div>
+            </div>
+       
+            
+            <div class="column">
+              <div class="card">
+                <img src="https://source.unsplash.com/1500x1000/?programmer,hacker" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>Cyber Security</b></h4>
+                  <p class="subinfo">Softwares Development in java,python, and many more</p>
+                  <div class="btn">
+                    <button class="servicebtn">READ MORE</button>
+                    </div>
+                </div>
+              </div>
+              </div>
+            
+              
+              <div class="column">
+                <div class="card">
+                  <img src="https://source.unsplash.com/1500x1000/?robot,AI" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>Automation & AI</b></h4>
+                    <p class="subinfo">Automating work using programming languages.. like python, etc</p>
+                    <div class="btn">
+                      <button class="servicebtn">READ MORE</button>
+                      </div>
+                  </div>
+                </div>
+                </div>
+              
 
+         
+          
+         
+        </div>
+    </div>
+  </div>
     <div class="main" id="portfolio">
       <br>
       <br>
@@ -68,30 +139,21 @@
             
             <li>
               
-              <a href="#Scroll1"><img src="ForP.jfif" alt="" id="image">
-              <div id="CoI1">project 1
-            </div></a>
+              <a href="#Scroll1"><img src="ProjectImg\Project5\ProCover5.jpg" alt="" id="image" class="Imageresize">
+              </a>
               </li>
             <li>
-              <a href="#Scroll1"><img src="ForP.jfif" alt="" id="image2"></a>
-              <div id="CoI2">Project 2
-                <img src="" alt="">
-              </div></li>
+              <a href="#Scroll1"><img src="ProjectImg\Project2\ProCover2.jfif" alt="" id="image2" class="Imageresize"></a>
+              </li>
             <li>
-              <a href="#Scroll1"><img src="ForP.jfif" alt="" id="image3"></a>
-              <div id="CoI3">Project 3
-                <img src="" alt="">
-              </div></li>
+              <a href="#Scroll1"><img src="ProjectImg\Project1\ProCover1.JPEG" alt="" id="image3" class="Imageresize"></a>
+              </li>
             <li>
-              <a href="#Scroll1"><img src="ForP.jfif" alt="" id ="image4"></a>
-              <div id="CoI4">Project 4
-                <img src="" alt="">
-              </div></li>
+              <a href="#Scroll1"><img src="ProjectImg\Project3\ProCover3.jfif" alt="" id ="image4" class="Imageresize"></a>
+              </li>
             <li>
-              <a href="#Scroll1"><img src="ForP.jfif" alt="" id ="image5"></a>
-              <div id="CoI5">Project 5
-                <img src="" alt="">
-              </div></li>
+              <a href="#Scroll1"><img src="ProjectImg\Project4\ProCover4.jfif" alt="" id ="image5" class="Imageresize"></a>
+              </li>
           </ul>
           
          </div>
@@ -133,9 +195,10 @@
               
               </div>
                <div class="ConD6">
-              <p class ="ParaAP"> Student Maganagement system on java <br> Includes : Student Login,Admin Log in and admin pannel.<br> </p>
+                 <h2>Student Managament System in JAVA</h2>
+              <p class ="ParaAP"> <br><strong style="text-align: center;">Important Moduels</strong><br> </p>
             
-              <button id="ProjB" type="button"> <a href="#" type="button" class="Dwonf1">Download Project</a> </button>
+              <button id="ProjB" type="button"> <a href="downloadfiles/Student.jar" type="button" class="Dwonf1">Download Project</a> </button>
               </div>
             </div>
 
@@ -176,8 +239,9 @@
             
             
             <div class="ConD6">
+              <h2>Rpad using Visual Basic in .net framework </h2>
             <p class ="ParaAP"> This project 1 is many uses in daily life</p>
-            <button id="ProjB" type="button"> <a href="#" type="button" class="Dwonf1">Download Project</a> </button>
+            <button id="ProjB" type="button"> <a href="downloadfiles/RpadSetup.zip" type="button" class="Dwonf1">Download Project</a> </button>
             </div>
           </div>
 
@@ -226,8 +290,9 @@
             
             
             <div class="ConD6">
+              <h2>Barcode Generator in python</h2>
             <p class ="ParaAP"> This project 1 is many uses in daily life</p>
-            <button id="ProjB" type="button"> <a href="#" type="button" class="Dwonf1">Download Project</a> </button>
+            <button id="ProjB" type="button"> <a href="downloadfiles/Barcoder_.rar" type="button" class="Dwonf1">Download Project</a> </button>
             </div>
           </div>
 
@@ -277,8 +342,9 @@
             
             
             <div class="ConD6">
+              <h2>RTS Entertainment an OTT Application using vb.net</h2>
             <p class ="ParaAP"> This project 1 is many uses in daily life</p>
-            <button id="ProjB" type="button"> <a href="#" type="button" class="Dwonf1">Download Project</a> </button>
+            <button id="ProjB" type="button"> <a href="downloadfiles/RTS Entertainment_setup.rar" type="button" class="Dwonf1">Download Project</a> </button>
             </div>
           </div>
 
@@ -315,78 +381,205 @@
             </div>
            
              <div class="ConD6">
-            <p class ="ParaAP"> This project 1 is many uses in daily life</p>
-            <button id="ProjB" type="button"> <a href="#" type="button" class="Dwonf1">Download Project</a> </button>
+               <h2>Road Fighter game using c++ </h2>
+            <p class ="ParaAP"><br>This project 1 is many uses in daily life</p>
+            <button id="ProjB" type="button"> <a href="downloadfiles/RoadFighter_setup.rar" type="button" class="Dwonf1">Download Project</a> </button>
             
             </div>
           </div> 
           
+
+       
           
+          
+        </div>
 
-
-       
-       
-       
     </div>
-    
-    
-
-    <br><br><br>
-
-
     <div class="main" id="Team">
-        <h1>Team </h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore mollitia impedit quas illo libero odio, praesentium ducimus veritatis, sed aut repudiandae fuga? Quos, vel ullam neque unde inventore modi ipsam!</p>
+
+      <section class="team">
+        <div class="containerss">
+            <h1>Our Team</h1>
+            <div class="cards">
+                <div class="box">
+                    <img src="imgs/rj.jpeg" alt="team img" />
+                    <h4>Raju Jettappa</h4>
+                    <h5>CEO & Founder, Developer</h5>
+                    <p>He is a Founder of Softx, and a Cyber Security Except.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="box">
+                    <img src="imgs/swapnil.jpeg" alt="team img" />
+                    <h4>Swapnil Virkar</h4>
+                    <h5>Manager & Programmer</h5>
+                    <p>He is Manager and Developer in softx Gaming Department.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="box">
+                    <img src="imgs/WhatsApp Image 2021-01-06 at 11.37.36 PM.jpeg" alt="team img" />
+                    <h4>Tanuja Deshmukh</h4>
+                    <h5>Product Manager & Application Tester</h5>
+                    <p>She is a Head of Market department in softx</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="box">
+                    <img src="imgs/Tejas.jpeg" alt="team img" />
+                    <h4>Tejas Kshirsagar</h4>
+                    <h5>Software Tester & programmer</h5>
+                    <p>He is python programmer in Softx</p>
+                 </div>
+               </div>
+           <div class="cards">
+               <div class="box">
+                   <img src="imgs/tanu.jpeg" alt="team img" />
+                   <h4>Shivansh Patel</h4>
+                   <h5>Softwares Developer & Web Desinger</h5>
+                   <p>He is java Developer in softx.</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+        
     </div>
+
     <div class="main" id="contact">
-        <h1>Contact us</h1>
-        <form>
-          
-        </form>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus laboriosam maiores voluptatibus quibusdam, quasi hic praesentium corrupti sed quod accusantium quae necessitatibus tenetur excepturi laudantium ipsam perferendis. Laborum, natus excepturi.</p>
+      <h3>We would be happy to answer your questions. Soft-X Help you bulid your Dream Application <br> Click The Below Button To Contact- Us</h3>
+      <a href="Contact.html"><button class="contacts"> <i class="fa fa-fw fa-address-book"></i> Contact-us</button></a>
+     
     </div>
-    <div class="main" id="about">
-        <h1>About-Us</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum consequatur mollitia ipsa praesentium accusamus quasi molestiae aspernatur dolore molestias at eaque laboriosam, quos deleniti nihil fugiat voluptas quaerat est.</p>
-    </div>
-    
-    <footer>
-        <h3 style="text-align: center;">Copyright:2020-2022 by SOFTX</h3>
-    </footer>
-    
-  <script>
-
       
-var mybutton = document.getElementById("myBtn");
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
 
 
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-}
+    <div class="main" id="about">
+      <div class="containers">
+        <div class="con1">
+          <h1>About Us</h1>
+            <p>
+          SoftX is a Online market place where you can buy the vast varity of digital product.
+          Every product we deliver will have thelatest technology,strong security protocols, responsive to work in all platforms like web or obile or tablet.
+            <br>
+             <br>
+      
+            </p>
+        </div>
+        <div class="con2">
+          <img src="imgs/work.jpg" width="100%" height="100%">
+        </div>
+      </div>    
+    
+    
+    
+    </div>
+  <footer>
+    
+      <div class="main-content">
+        <div class="left box">
+          <h2>Follow us</h2>
+          <div class="content">
+            <p>Follow us to get latest updates about our projects.SoftX always do best projects which you can follow on our social media handle.</p>
+            <div class="social">
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Mumbai, Thane</span>
+            </div>
+            <div class="phone">
+              <a href="tel:9876543210">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">9876543210</span>
+              </a>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text"><a>SoftX@gmail.com</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Subscribe our News Letter</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required>
+              </div>
+              <div class="btn">
+                <button type="submit">Subscribe</button>
+              </div>
+              <h4 id="terms"><i class="fa fa-fw fa-balance-scale"></i><a href="TACond.html">  Terms & Conditions</a></h4>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit">Created By <a href="http://rtssoftwares.tk/">SoftX</a> | </span>
+          <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+        </center>
+      </div>
+    </footer>
 
 
-
-  </script>
- 
-   <script src="Js/slider.js">
-
-   
-   
+<script>
+  $('.sliders').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 </script>
-  
-   
- 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JavaScript/JavaScript.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="JavaScript/slider.js"></script>
+
 
 </body>
+
 </html>

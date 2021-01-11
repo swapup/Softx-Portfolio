@@ -1,0 +1,799 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    
+}
+body{
+    background:black;
+    color:white;
+    min-height: 100vh;
+    
+
+    
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6%;
+    padding:40px 100px;
+    margin-top: -15px;
+    
+}
+
+header.sticky{
+    padding:5px 100px;
+    background:#fff;
+}
+header .logo{
+
+        position: relative;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition:0.6s;
+}
+
+header ul{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color:#fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+
+}
+/* header button{
+    
+    font-size: 50px;
+    color:black;
+    font-size: large;
+    position: relative;
+    padding:5px;
+    margin-top: 4px;
+    border:none;
+   
+    background: limegreen;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+
+} */
+
+.contact{
+    font-size: 50px;
+    
+    font-size: large;
+    position: relative;
+    padding:5px;
+    margin-top: 4px;
+    border-color: #4CAF50;
+    color:white;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+    border-radius:10px;
+    background-color: transparent;
+}
+.contact:hover{
+
+    background-color: #4CAF50;
+    color: white;
+}
+
+header.sticky .logo{
+    color:#000;
+    margin-top: 20px;
+}
+header.sticky button{
+    /* color:#000; */
+    color:green;
+    margin-top: 15px;
+}
+header.sticky ul li a{
+    color:#000;
+    
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color:gray;
+    color: white; 
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 50px; 
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+p{
+    color:white;
+}
+
+
+#home{
+   
+    height: 560px; 
+    background-image:url("p2c.jpg");
+    background-size: cover;
+    /* position: relative; */
+    background-position: top center;
+
+    z-index: 6;
+     /* height: 500px;
+    background: white;
+    color:black;
+    background:url("https://source.unsplash.com/1500x1000/?network,databases");
+    
+ */
+
+}
+.Full{
+    
+    padding-top:80px;
+}
+#home::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .8;
+    z-index: -1; 
+
+}
+
+ #home .Home{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    max-height: 650px;
+    padding: 0 50px;
+
+    justify-content: flex-start;
+    
+}
+#home h1{
+
+    display: block;
+    width: fit-content;
+    font-size: 40px;
+    /* position: relative; */
+    color:white;
+    animation: textrr 1s ease;
+} 
+#home h1:nth-child(1){
+    
+    color: white;
+}
+#home h1:nth-child(2){
+    animation-delay: 1s;
+    color: turquoise;
+    
+}
+#home h1:nth-child(3){
+
+    padding-top:30px;
+    font-size: 25px;
+    color:gold;
+    
+    
+    
+}
+
+#home h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+
+    animation: textr 1s ease;
+    animation-delay: 1s;
+   
+}
+
+#home .expl{
+    display: inline-block;
+    padding: 7px 30px;
+    text-decoration: none;
+    color: red;
+    background-color: transparent;
+    border: 2px solid;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .15px;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property:color;
+
+
+}
+#home .expl:hover{
+    color: whitesmoke;
+    background-color: red;
+}
+#home .homeimg{
+   flex:0 0 40%;
+   max-width: 30%;
+
+   padding: 0 300px;
+   margin-left: 45%;
+
+   margin-top: -20%;
+
+}
+
+#home .homeimg .logoim{
+    max-width: 300px;
+
+}
+#home .homeimg .logoim .Softxlogo{
+    width: 100%;
+    border-radius: 50%;
+}
+@keyframes textr{
+    50%{
+        width: 100%;
+        left: 0;
+        color: springgreen;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+        color: seagreen;
+    }
+}
+@keyframes textrr{
+    100%{
+        color:teal
+    }
+}
+
+
+
+
+
+
+
+#service {
+    height: 500px;
+    background: white;
+    color:black;
+    background:url("https://source.unsplash.com/1500x1000/?network,databases");
+    background-attachment: fixed;
+
+}
+.subinfo{
+    margin-top: 10px;
+    color:Black;
+    letter-spacing: 1px;
+
+
+
+
+}
+
+/* #portfolio{
+    height: 500px;
+ 
+    background:url("https://source.unsplash.com/1600x1000/?nature,computers,space");
+    background-attachment: fixed;
+
+} */
+#portfolio ul{
+    margin-left: 100px;
+}
+
+#portfolio ul li{
+    
+    margin-left: 100px;
+    align-items: center;
+	text-align: center;
+	display: inline-block;
+	list-style: none;
+    margin: 0px 20px;
+    
+    
+
+
+}
+.Imageresize{
+    height: 250px;
+    width: 200px;
+    object-fit: fill;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+#portfolio .scrollimg .image{
+    max-width: 100%;
+
+    transition: .6s ease-out;
+}
+#portfolio ul li #image :hover{
+    max-width: 220px;
+}
+.ProjectSec{
+    width: 69%;  
+    display: flex;
+}
+
+#CoI1{
+    font-size: 100%;
+}
+
+
+#ProContaint1{
+    
+    margin-left: 120px;
+    max-width: 1200px;
+    display: none;
+    height: 400px;
+    position: relative;
+}
+#ProContaint2{
+    
+    margin-left: 120px;
+    max-width: 1200px;
+    display: none;
+    height: 400px;
+    position: relative;
+
+}
+#ProContaint3{
+    
+    margin-left: 120px;
+    max-width: 1200px;
+    display: none;
+    height: 400px;
+
+
+}
+#ProContaint4{
+    
+    margin-left: 120px;
+    max-width: 1200px;
+    display: none;
+    height: 400px;
+
+
+}
+#ProContaint5{
+    
+    margin-left: 120px;
+    max-width: 1200px;
+     display: none;
+    height: 400px;
+
+}
+
+
+
+
+
+/*       Slider Code */
+.ConD2{
+    left:-12px;
+    width: 60%;
+    display:inline-block;
+    position: relative;
+    
+    
+    margin: 0 auto;
+    height: 400px;
+}
+
+.slidingImg{
+    width: 100%;
+    
+    height: 100%;
+    object-fit:fill;
+}
+.track-container{
+    
+    height: 100%;
+    width: 98%;
+    top:0;
+    bottom: 0;
+    position:relative;
+}
+
+track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .dot1 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot1:hover {
+    background-color: #717171;
+  }
+  .dot2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot2:hover {
+    background-color: #717171;
+  }
+  .dot3 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot3:hover {
+    background-color: #717171;
+  }
+  .dot4 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot4:hover {
+    background-color: #717171;
+  }
+  
+.slideimg{
+    position: absolute;
+    top: 0;
+    left:1%;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+}
+.slideimg1{
+    position: absolute;
+    top: 0;
+    left:1%;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+}
+.slideimg2{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+}
+.slideimg3{
+    position: absolute;
+    top: 0;
+    left:1%;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+}
+.slideimg4{
+    position: absolute;
+    top: 0;
+    left:1%;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+}
+.ConDBtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    height: 100px;
+    cursor: pointer;
+    
+    
+
+}
+.btn--left{
+    left :-2%;
+}
+.btn--right{
+    right: -6%;
+}
+
+.p{
+    /* position: relative; */
+    background-color: black;
+    
+}
+.ParaAP{
+    height: 92.5%;
+}
+
+.ConD6{
+    width: 35%;  
+    border: 2px solid white; 
+    padding: 5px;
+    background-color: black;
+}
+
+#ProjB{
+    background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;  
+
+   width: 100%;
+   margin-top: -20%;
+
+  
+}
+#ProjB a{
+    margin-top: -30px;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+
+#projB a :hover{
+    background-color: royalblue;
+    
+}
+
+.Img1{
+    border: 2px;
+}
+
+
+
+#portfolio{
+    height: 500px;
+    
+    background-attachment: fixed;
+
+}
+
+#Team{
+    
+    height: 700px;
+    background:url("https://source.unsplash.com/1500x1000/?nature,computers");
+    background-attachment: fixed;
+    
+}
+
+#contact{
+
+    height: 300px;
+    background-color:whitesmoke;
+    
+    font-weight: 500px;
+}
+#contact h3{
+    padding-top:4rem;
+    font-size: 25px;
+    color:black;
+    text-align: center;
+    font-weight: 500;
+
+  
+
+
+}
+.contacts {
+    
+    align-content: center;
+    text-align:center;
+    font-weight: 500;
+    font-size: larger;
+    border-radius: 5px;
+    border-color: yellowgreen;
+    color:green;
+    background-color:transparent;
+    padding:10px;
+    margin-left: 38rem;
+    margin-top: 2rem;
+   
+
+}
+.contacts:hover{
+    color:white;
+    background-color: yellowgreen;
+}
+#about{
+    height: 500px;
+    background-color:black;
+
+}
+
+
+
+
+
+.containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border:2px solid white;*/
+    height: 95vh;
+    color:red;
+}	
+
+.con1{
+    width: 40%;
+    /*border:2px solid white;*/
+    margin: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+.con1 h1{
+    font-size: 50px;
+    color:yellowgreen;
+
+    
+    }
+
+.con1 p{
+    width: 80%;
+    font-size: 20px;
+    line-height: 30px;
+}
+.con2{
+    width: 50%;
+    height: 50%;
+    /*border:2px solid white;*/
+    margin: 20px;
+    
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+h3{
+    color:white;
+}
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  img {
+      border-radius:5px 5px 0 0;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  .row {margin: 0 -5px;}
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .servicebtn{
+      
+    margin-top:20px;
+      background-color: limegreen;
+      padding:8px;
+      border:none;
+      font-weight: 500;
+      border-radius: 20px;
+      color:black;
+  }
+
+  
+  .rows1 {
+      margin-top: 0;
+      margin-bottom: 3rem;
+      
+    
+    
+  }
+  .maps{
+      
+    
+    height: 700px;
+    
+    
+  }
+  .gform{
+      margin-left:45rem;
+      position: relative;
+      margin-top:-44rem;
+    
+  }
+  
+
+
+  
