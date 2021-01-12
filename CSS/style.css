@@ -323,7 +323,7 @@ p{
 
 #portfolio ul li{
     
-    margin-left: 100px;
+    margin-left: 120px;
     align-items: center;
 	text-align: center;
 	display: inline-block;
@@ -337,6 +337,7 @@ p{
 .Imageresize{
     height: 250px;
     width: 200px;
+    border: 2px solid white;
     object-fit: fill;
 }
 
